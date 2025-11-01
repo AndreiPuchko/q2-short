@@ -1,4 +1,5 @@
 # 📝 The Shortest ToDo App Ever (with DB & CRUD)
+[**https://github.com/AndreiPuchko/q2-short**](https://github.com/AndreiPuchko/q2-short)
 
 A minimal example of a complete crossplatform database application built with [**q2gui**](https://pypi.org/project/q2gui/) and [**q2db**](https://pypi.org/project/q2db/).  
 It demonstrates how to create a working **ToDo list** app with **SQLite**, **CRUD functionality**, **dark/light themes**, **import/export**, and **menu actions** — all in about 40 lines of Python!
