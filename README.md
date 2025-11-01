@@ -17,15 +17,33 @@ It demonstrates how to create a working **ToDo list** app with **SQLite**, **CRU
 
 ---
 
-## 🧩 Requirements
-
-Install the **q2** packages:
+## 🧩 Quick Start
 
 ```bash
-pip install q2gui q2db
+git clone https://github.com/AndreiPuchko/q2-short.git
+cd q2-short
+python -m venv .venv
+.venv\Scripts\activate  # or 'source .venv/bin/activate' on macOS/Linux
+pip install q2db q2gui
+python app.py
 ```
 
-> It uses **PyQt6**.
+---
+
+
+## 💾 Persistence Tip!
+
+By default, the app uses an in-memory SQLite database, which means all data is lost when you close the app.
+
+To make your data persistent, simply modify line 29 in todo_app.py:
+```python
+# In-memory (temporary) database:
+self.db = Q2Db("sqlite3", database_name=":memory:")
+
+# ➜ Change it to a file-based (persistent) database:
+self.db = Q2Db("sqlite3", database_name="todo_database.sqlite")
+```
+This will store your ToDo data in a file named todo_database.sqlite in the same folder as the script.
 
 ---
 
@@ -90,10 +108,12 @@ This example shows how **little code** you need with **Q2** to make powerful dat
 > It’s arguably *the shortest fully functional CRUD + DB app ever written in Python.*
 
 ## Screenshots
-
-![win0](https://andreipuchko.github.io/q2-shorts/windows0.png)
-![win1](https://andreipuchko.github.io/q2-shorts/windows1.png)
-![lin0](https://andreipuchko.github.io/q2-shorts/linux0.png)
-![lin1](https://andreipuchko.github.io/q2-shorts/linux1.png)
-![mac0](https://andreipuchko.github.io/q2-shorts/mac0.png)
-![mac1](https://andreipuchko.github.io/q2-shorts/mac1.png)
+### Windows
+![win0](https://andreipuchko.github.io/q2-short/docs/windows0.png)
+![win1](https://andreipuchko.github.io/q2-short/docs/windows1.png)
+### Linux
+![lin0](https://andreipuchko.github.io/q2-short/docs/linux0.png)
+![lin1](https://andreipuchko.github.io/q2-short/docs/linux1.png)
+### Mac
+![mac0](https://andreipuchko.github.io/q2-short/docs/mac0.png)
+![mac1](https://andreipuchko.github.io/q2-short/docs/mac1.png)
