@@ -12,8 +12,6 @@ It demonstrates how to create a working **ToDo list** app with **SQLite**, **CRU
 - 📋 Provides a CRUD form for editing ToDo items  
 - 🌞 Switch between Light and Dark modes  
 - 🪶 Ultra-short, fully functional GUI + DB app  
-- 💾 Uses `Q2Db` for database abstraction  
-- ⚙️ Uses `Q2Form` and `Q2CursorModel` for GUI + data binding
 
 ---
 
@@ -44,6 +42,19 @@ self.db = Q2Db("sqlite3", database_name=":memory:")
 self.db = Q2Db("sqlite3", database_name="todo_database.sqlite")
 ```
 This will store your ToDo data in a file named todo_database.sqlite in the same folder as the script.
+
+---
+
+## Screenshots
+### Windows
+![win0](https://andreipuchko.github.io/q2-short/docs/windows0.png)
+![win1](https://andreipuchko.github.io/q2-short/docs/windows1.png)
+### Linux
+![lin0](https://andreipuchko.github.io/q2-short/docs/linux0.png)
+![lin1](https://andreipuchko.github.io/q2-short/docs/linux1.png)
+### Mac
+![mac0](https://andreipuchko.github.io/q2-short/docs/mac0.png)
+![mac1](https://andreipuchko.github.io/q2-short/docs/mac1.png)
 
 ---
 
@@ -79,14 +90,6 @@ This will store your ToDo data in a file named todo_database.sqlite in the same 
 
 ---
 
-## 🏃‍♂️ Run It
-
-```bash
-python app.py
-```
-
----
-
 ## 🧰 Tech Stack
 
 - [q2gui](https://pypi.org/project/q2gui/) – GUI framework (PyQt6)  
@@ -106,14 +109,3 @@ MIT License © [Andrei Puchko](https://github.com/AndreiPuchko)
 This example shows how **little code** you need with **Q2** to make powerful database tools, admin panels, or utilities — all with a consistent GUI and no boilerplate.
 
 > It’s arguably *the shortest fully functional CRUD + DB app ever written in Python.*
-
-## Screenshots
-### Windows
-![win0](https://andreipuchko.github.io/q2-short/docs/windows0.png)
-![win1](https://andreipuchko.github.io/q2-short/docs/windows1.png)
-### Linux
-![lin0](https://andreipuchko.github.io/q2-short/docs/linux0.png)
-![lin1](https://andreipuchko.github.io/q2-short/docs/linux1.png)
-### Mac
-![mac0](https://andreipuchko.github.io/q2-short/docs/mac0.png)
-![mac1](https://andreipuchko.github.io/q2-short/docs/mac1.png)
